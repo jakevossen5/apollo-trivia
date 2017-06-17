@@ -19,7 +19,7 @@
 
         <TextView
             android:gravity="center"
-            android:id="@+id/explanation"
+            android:id="@+id/correctOrNot"
             android:layout_width="326dp"
             android:layout_height="54dp"
             android:text="@string/explanation"

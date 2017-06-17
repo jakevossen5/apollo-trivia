@@ -22,10 +22,10 @@ public class FactGenerator {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public Facts genFacts(){
         Facts facts = new Facts();
-        String tempFacts[] = {"answer0","answer1","answer2","answer3"};
-        facts.addFact(new Fact("question",tempFacts,1));
+        String tempFacts[] = {"joe","ben","bobby","me!"};
+        facts.addFact(new Fact("Who likes pie?",tempFacts,3));
         //String tempFacts[] = {"answer0","answer1","answer2","answer3"};
-        facts.addFact(new Fact("question1",tempFacts,1));
+        //facts.addFact(new Fact("question1",tempFacts,1));
         return facts;
     }
 

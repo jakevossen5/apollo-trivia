@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 public class explanation extends AppCompatActivity {
 
@@ -12,16 +13,24 @@ public class explanation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explanation);
-        RadioButton answer0 = (RadioButton) findViewById(R.id.answer0RadioButton);
-        RadioButton answer1 = (RadioButton) findViewById(R.id.answer1RadioButton);
-        RadioButton answer2 = (RadioButton)findViewById(R.id.answer2RadioButton);
-        RadioButton answer3 = (RadioButton)findViewById(R.id.answer3RadioButton);
+
+        TextView correctOrNot = (TextView)findViewById(R.id.correctOrNot);
+        if (isAnswerCorrect()){
+            correctOrNot.setText("Correct!");
+        }
+        else {
+            correctOrNot.setText("Not Correct :(");
+        }
     }
     public void returnFromExplanation(View view){
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("isAnswerCorrect",isAnswerCorrect());
         startActivity(intent);
     }
-    public boolean isAnswerCorrect()
+    public boolean isAnswerCorrect(){
+        Intent intent = getIntent();
+        boolean isTheAnswerCorrect = intent.getBooleanExtra("isItCorrect",false);
+        return isTheAnswerCorrect;
+    }
 
 }
