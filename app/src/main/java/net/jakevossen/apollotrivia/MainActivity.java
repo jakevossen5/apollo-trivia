@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         intent.putExtra("explanation",newRandFact.getExplanation());
         intent.putExtra("isItCorrect",isItCorrect(newRandFact,radioButton));
+        intent.putExtra("source",newRandFact.getSource());
         startActivity(intent);
     }
 

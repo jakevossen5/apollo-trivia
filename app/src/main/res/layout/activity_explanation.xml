@@ -32,6 +32,14 @@
             android:layout_weight="0.03"
             android:text="@string/explanation" />
 
+        <TextView
+            android:id="@+id/sourceLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:autoLink="web"
+            android:text="Error getting source" />
+
         <Button
             android:id="@+id/sumbitGenButton"
             android:layout_width="300dp"

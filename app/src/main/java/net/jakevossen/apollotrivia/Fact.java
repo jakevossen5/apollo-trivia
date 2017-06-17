@@ -19,8 +19,9 @@ public class Fact {
     private int correctAnswerIndex;
     private String correctAnswer;
     private String explanation;
+    private String source;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public Fact(String question, ArrayList<String> answersIn, int correctAnswerIndex, String explanation){
+    public Fact(String question, ArrayList<String> answersIn, int correctAnswerIndex, String explanation, String source){
         this.question = question;
         this.answers.add(answersIn.get(0));
         this.answers.add(answersIn.get(1));
@@ -29,6 +30,7 @@ public class Fact {
         this.correctAnswerIndex = correctAnswerIndex;
         this.correctAnswer = answers.get(correctAnswerIndex);
         this.explanation = explanation;
+        this.source = source;
         randomize(answers);
     }
 
@@ -67,5 +69,8 @@ public class Fact {
     }
     public String getExplanation() {
         return explanation;
+    }
+    public String getSource() {
+        return source;
     }
 }

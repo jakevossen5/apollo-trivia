@@ -23,6 +23,14 @@ public class explanation extends AppCompatActivity {
         }
 
         setExplanation();
+        setSource();
+    }
+
+    private void setSource() {
+        Intent intent = getIntent();
+        String source = intent.getStringExtra("source");
+        TextView sourceTextView = (TextView)findViewById(R.id.sourceLink);
+        sourceTextView.setText(source);
     }
 
     private void setExplanation() {
