@@ -19,7 +19,7 @@ public class explanation extends AppCompatActivity {
             correctOrNot.setText("Correct!");
         }
         else {
-            correctOrNot.setText("Not Correct :(");
+            correctOrNot.setText("Incorrect");
         }
     }
     public void returnFromExplanation(View view){

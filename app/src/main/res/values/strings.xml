@@ -8,5 +8,6 @@
     <string name="answer3">answer three</string>
 
     <string name="explanation">Explanation</string>
+    <string name="yesOrNo">Not Correct</string>
     <string name ="nextQuestion">Go to next question</string>
 </resources>

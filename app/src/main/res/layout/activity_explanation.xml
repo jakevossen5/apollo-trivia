@@ -22,8 +22,16 @@
             android:id="@+id/correctOrNot"
             android:layout_width="326dp"
             android:layout_height="54dp"
-            android:text="@string/explanation"
+            android:text="Incorrect"
             android:layout_weight="0.03" />
+
+        <TextView
+            android:id="@+id/explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="@string/explanation" />
+
         <Button
             android:id="@+id/sumbitGenButton"
             android:layout_width="300dp"
