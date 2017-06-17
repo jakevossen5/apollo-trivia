@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.jakevossen.apollotrivia.explanation">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:gravity="top"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/explanation"
+            android:layout_width="326dp"
+            android:layout_height="54dp"
+            android:text="@string/explanation"
+            android:layout_weight="0.03" />
+        <Button
+            android:id="@+id/sumbitGenButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nextQuestion"
+            android:onClick="returnFromExplanation"/>
+
+        </LinearLayout>
+</android.support.constraint.ConstraintLayout>

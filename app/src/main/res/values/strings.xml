@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Apollo Trivia</string>
+    <string name="question">Current question</string>
+
+    <string name="answer0">answer zero</string>
+    <string name="answer1">answer one</string>
+    <string name="answer2">answer two</string>
+    <string name="answer3">answer three</string>
+
+    <string name="explanation">Explanation</string>
+    <string name ="nextQuestion">Go to next question</string>
+</resources>
