@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         int selectedId = radioGroup.getCheckedRadioButtonId();
         RadioButton radioButton = (RadioButton) findViewById(selectedId);
 
-
+        intent.putExtra("explanation",newRandFact.getExplanation());
         intent.putExtra("isItCorrect",isItCorrect(newRandFact,radioButton));
         startActivity(intent);
     }

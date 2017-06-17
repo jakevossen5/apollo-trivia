@@ -21,7 +21,17 @@ public class explanation extends AppCompatActivity {
         else {
             correctOrNot.setText("Incorrect");
         }
+
+        setExplanation();
     }
+
+    private void setExplanation() {
+        Intent intent = getIntent();
+        String explanation = intent.getStringExtra("explanation");
+        TextView explained = (TextView)findViewById(R.id.explanation);
+        explained.setText(explanation);
+    }
+
     public void returnFromExplanation(View view){
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("isAnswerCorrect",isAnswerCorrect());
