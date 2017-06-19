@@ -23,7 +23,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignRight="@+id/goBackToMain"
             android:layout_marginStart="34dp"
-            android:text="This app was created by me to learn more about Android development as well as the Apollo missions, two things that I find really interesting. I might open source it one of these days but not yet. If you have questions, or want to contribute trivia, contact me at apollotrivia@jakevossen.net"
+            android:text="This app was created by me to learn more about Android development as well as the Apollo missions, two things that I find really interesting. I might open source it one of these days but not yet. If you have questions, or want to contribute trivia, contact me at apollotrivia@jakevossen.net. Check out my other projects and information and jakevossen.net"
             tools:layout_editor_absoluteX="70dp"
             tools:layout_editor_absoluteY="-59dp"
             android:layout_marginLeft="34dp" />
