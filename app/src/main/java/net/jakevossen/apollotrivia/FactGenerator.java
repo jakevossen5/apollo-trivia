@@ -212,6 +212,188 @@ public class FactGenerator {
 
         facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
 
+        //new question
+        answerList.clear();
+        question = "When was the launch of Apollo 7?";
+
+        answerList.add("Oct. 11, 1968");
+        answerList.add("Feb. 2, 1966");
+        answerList.add("Aug. 20, 1969");
+        answerList.add("Jul. 21, 1968");
+
+        answerIndex = 0;
+        explanation = "Apollo 7 was launched on Oct. 11, 1968; 11:02:45 a.m. EST";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo7.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What launch complex did the Apollo 7 mission use?";
+
+        answerList.add("Launch Complex 34");
+        answerList.add("Launch Complex 40");
+        answerList.add("Launch Complex 41");
+        answerList.add("Launch Complex 37A");
+
+        answerIndex = 0;
+        explanation = "Apollo 7 was launched at Launch Complex 34";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo7.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the size of orbit of the Apollo 7 mission?";
+
+        answerList.add("141 miles");
+        answerList.add("212 miles");
+        answerList.add("180 miles");
+        answerList.add("334 miles");
+
+        answerIndex = 0;
+        explanation = "The orbit of Apollo 7 was 140 by 183 miles";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo7.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the point of keeping the S-IVB part of the craft in orbit with them in the Apollo 7 mission?";
+
+        answerList.add("So they could simulate docking");
+        answerList.add("It contained nessesary food and supplies");
+        answerList.add("They didn't want too, the jetison failed");
+        answerList.add("It was part of a science equitment that they needed");
+
+        answerIndex = 0;
+        explanation = "They used the jettision part of the ship to simulate docking, a nessesary part of the lunar mission";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo7.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How did the engine preform on the Apollo 7 mission?";
+
+        answerList.add("Nearly perfectly");
+        answerList.add("Incredibly poorly, and it was difficult to return from orbit");
+        answerList.add("Acceptable, but could have been better");
+        answerList.add("Bad, but not bad enough that it caused issues.");
+
+        answerIndex = 0;
+        explanation = "There were eight nearly perfect firings out of eight attempts";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo7.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How long did the Apollo 7 capsule stay in orbit?";
+
+        answerList.add("10.8 days");
+        answerList.add("8.1 days");
+        answerList.add("3.2 days");
+        answerList.add("5.9 days");
+
+        answerIndex = 0;
+        explanation = "Apollo 7 was in orbit for 10.8 days";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo7.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was one of the medical issues the astronauts expeced once Apollo 7";
+
+        answerList.add("A bad cold");
+        answerList.add("Dehydration");
+        answerList.add("Eyesight issues from the sun");
+        answerList.add("Skin issues");
+
+        answerIndex = 0;
+        explanation = "About 15 hours into the flight, Schirra developed a bad cold, and Cunningham and Eisele soon followed suit. A cold is uncomfortable enough on the ground, but in weightlessness it presents a different problem. Mucus accumulates, fills the nasal passages and does not drain from the head. The only relief is to blow hard, which is painful to the ear drums. So the crew of Apollo 7 whirled through space suffering from stopped-up ears and noses.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo7.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the landing spot of Apollo 7?";
+
+        answerList.add("27 degrees, 32 minutes north, and 64 degrees, four minutes west");
+        answerList.add("31 degrees, 19 minutes north, and 44 degrees, 12 minutes west");
+        answerList.add("25 degrees, 40 minutes north, and 66 degrees, 52 minutes west");
+        answerList.add("12 degrees, 23 minutes north, and 12 degrees, 44 minutes west");
+
+        answerIndex = 0;
+        explanation = "Apollo's flotation bags had their first try out when the spacecraft, considered a \"lousy boat,\" splashed down in the Atlantic southeast of Bermuda, less than 2 kilometers from the planned impact point. Landing location was 27 degrees, 32 minutes north, and 64 degrees, four minutes west. The module turned upside down, but when inflated, the brightly colored bags flipped it upright.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo7.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What time did the astronauts on Apollo 7 return to the ship?";
+
+        answerList.add("8:20 a.m. EDT");
+        answerList.add("2:20 a.m. EDT");
+        answerList.add("9:15 p.m. EDT");
+        answerList.add("3:36 p.m. EDT");
+
+        answerIndex = 0;
+        explanation = "The crew arrived at 8:20 a.m. EDT";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo7.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //APOLLO 8
+
+        //new question
+        answerList.clear();
+        question = "Who was the Commander of the Apollo 8 mission?";
+
+        answerList.add("Frank Borman");
+        answerList.add("Neil Armstrong");
+        answerList.add("William A. Anders");
+        answerList.add("Edwin E. Aldrin Jr.");
+
+        answerIndex = 0;
+        explanation = "The commander of the Apollo 8 mission was Frank Borman";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "When was the launch of Apollo 8?";
+
+        answerList.add("Dec. 21, 1968");
+        answerList.add("Mar. 28, 1967");
+        answerList.add("Oct. 3, 1968");
+        answerList.add("Jul. 14, 1968");
+
+        answerIndex = 0;
+        explanation = "Apollo 8 launched at Dec. 21, 1968; 7:51 a.m. EST";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How long was the burn that set Apollo 8 to the moon?";
+
+        answerList.add("Five-minute, 17-seconds");
+        answerList.add("Two-minute, 45-seconds");
+        answerList.add("Eight-minute, 30-seconds");
+        answerList.add("Jul. 14, 1968");
+
+        answerIndex = 0;
+        explanation = "Apollo 8 launched at Dec. 21, 1968; 7:51 a.m. EST";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+        //end
         return facts;
     }
 
