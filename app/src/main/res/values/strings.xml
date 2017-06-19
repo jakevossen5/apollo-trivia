@@ -9,5 +9,6 @@
 
     <string name="explanation">Explanation</string>
     <string name="yesOrNo">Not Correct</string>
-    <string name ="nextQuestion">Go to next question</string>
+    <string name="nextQuestion">Go to next question</string>
+    <string name="title_activity_info">Info</string>
 </resources>
