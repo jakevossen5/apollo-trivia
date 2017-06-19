@@ -1,5 +1,6 @@
 package net.jakevossen.apollotrivia;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.InputStream;
 
@@ -75,13 +77,25 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, explanation.class);
         RadioGroup radioGroup = (RadioGroup)findViewById(R.id.answersRadioGroup);
 
-        int selectedId = radioGroup.getCheckedRadioButtonId();
-        RadioButton radioButton = (RadioButton) findViewById(selectedId);
 
-        intent.putExtra("explanation",newRandFact.getExplanation());
-        intent.putExtra("isItCorrect",isItCorrect(newRandFact,radioButton));
-        intent.putExtra("source",newRandFact.getSource());
-        startActivity(intent);
+        if (radioGroup.getCheckedRadioButtonId() == -1){
+            //make a toast!
+            Context context = getApplicationContext();
+            CharSequence text = "Please select an option";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+        }
+        else {
+            int selectedId = radioGroup.getCheckedRadioButtonId();
+            RadioButton radioButton = (RadioButton) findViewById(selectedId);
+
+            intent.putExtra("explanation",newRandFact.getExplanation());
+            intent.putExtra("isItCorrect",isItCorrect(newRandFact,radioButton));
+            intent.putExtra("source",newRandFact.getSource());
+            startActivity(intent);
+        }
     }
 
     private boolean isItCorrect(Fact ourFact, RadioButton radioButton) {
