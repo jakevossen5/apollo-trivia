@@ -20,10 +20,9 @@
         <TextView
             android:gravity="center"
             android:id="@+id/correctOrNot"
-            android:layout_width="326dp"
-            android:layout_height="54dp"
-            android:text="Incorrect"
-            android:layout_weight="0.03" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incorrect" />
 
         <TextView
             android:id="@+id/explanation"

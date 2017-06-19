@@ -8,7 +8,7 @@
 
 
     <RelativeLayout
-        android:layout_width="344dp"
+        android:layout_width="350dp"
         android:layout_height="495dp"
         android:layout_margin="10dp"
         tools:layout_editor_absoluteY="8dp"
