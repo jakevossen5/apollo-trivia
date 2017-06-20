@@ -1,5 +1,7 @@
 package net.jakevossen.apollotrivia;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -10,6 +12,7 @@ import java.util.Random;
 public class Facts {
 
     private ArrayList<Fact> facts = new ArrayList<Fact>();
+    private ArrayList<Fact> usedFacts = new ArrayList<Fact>();
     public Facts(){
 
     }
@@ -20,6 +23,15 @@ public class Facts {
         return facts.get(index);
     }
     public Fact getRandomFact(){
-        return facts.get((new Random()).nextInt(facts.size()));
+        Fact fact = facts.get((new Random()).nextInt(facts.size()));
+        usedFacts.add(fact);
+        facts.remove(fact);
+        if(usedFacts.size() == 0){
+            Log.d("TAG", "Reloading the used questions");
+            for (int i = 0; i < usedFacts.size(); i++){
+                facts.add(usedFacts.get(i));
+            }
+        }
+        return fact;
     }
 }

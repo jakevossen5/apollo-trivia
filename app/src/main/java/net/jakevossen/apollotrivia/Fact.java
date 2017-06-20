@@ -20,6 +20,7 @@ public class Fact {
     private String correctAnswer;
     private String explanation;
     private String source;
+    private boolean hasBeenUsed = false;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public Fact(String question, ArrayList<String> answersIn, int correctAnswerIndex, String explanation, String source){
         this.question = question;
@@ -72,5 +73,11 @@ public class Fact {
     }
     public String getSource() {
         return source;
+    }
+    public void setHasBeenUsed(boolean used) {
+        hasBeenUsed = used;
+    }
+    public boolean getHasBeenUsed(){
+        return hasBeenUsed;
     }
 }
