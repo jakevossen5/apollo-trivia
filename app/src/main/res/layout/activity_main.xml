@@ -34,28 +34,24 @@
                 android:id="@+id/answer0RadioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="@string/answer0" />
 
             <RadioButton
                 android:id="@+id/answer1RadioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="@string/answer1" />
 
             <RadioButton
                 android:id="@+id/answer2RadioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="@string/answer2" />
 
             <RadioButton
                 android:id="@+id/answer3RadioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="@string/answer3" />
 
         </RadioGroup>
