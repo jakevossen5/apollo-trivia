@@ -7,6 +7,7 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -20,35 +21,29 @@ import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
     private Fact newRandFact;
-    private Boolean firstTime = null;
+    private static Facts facts;
+    private static  boolean isFirstTime = true;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if ((isFirstTime())){
-            genNewQuestion();
+        //first time checker
+        if (isFirstTime){
+            genAllQuestions();
+            isFirstTime = false;
         }
+        //set the questions
+        genNewQuestion();
+
+
     }
 
-    private boolean isFirstTime() {
-        if (firstTime == null) {
-            SharedPreferences mPreferences = this.getSharedPreferences("first_time", Context.MODE_PRIVATE);
-            firstTime = mPreferences.getBoolean("firstTime", true);
-            if (firstTime) {
-                SharedPreferences.Editor editor = mPreferences.edit();
-                editor.putBoolean("firstTime", false);
-                editor.commit();
-            }
-        }
-        return firstTime;
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
-
         return true;
     }
     @Override
@@ -70,8 +65,6 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void genNewQuestion() {
-        FactGenerator factGenerator = new FactGenerator();
-        Facts facts = factGenerator.genFacts();
         Fact newRandFact = facts.getRandomFact();
         this.newRandFact = newRandFact;
 
@@ -80,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton answer1 = (RadioButton) findViewById(R.id.answer1RadioButton);
         RadioButton answer2 = (RadioButton)findViewById(R.id.answer2RadioButton);
         RadioButton answer3 = (RadioButton)findViewById(R.id.answer3RadioButton);
+        Log.d("TAG", "Set questions");
         //set text
         question.setText(newRandFact.getQuestion());
         answer0.setText(newRandFact.getAnswer(0));
@@ -88,7 +82,11 @@ public class MainActivity extends AppCompatActivity {
         answer3.setText(newRandFact.getAnswer(3));
     }
 
-    public static void onRadioButtonClicked(View view){
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    private void genAllQuestions() {
+        FactGenerator factGenerator = new FactGenerator();
+        facts = factGenerator.genFacts();
+        Log.d("TAG", "Generated questions");
     }
 
     public void submitGenButton(View view){
