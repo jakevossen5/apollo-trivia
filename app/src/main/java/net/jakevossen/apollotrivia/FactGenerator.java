@@ -386,13 +386,135 @@ public class FactGenerator {
         answerList.add("Five-minute, 17-seconds");
         answerList.add("Two-minute, 45-seconds");
         answerList.add("Eight-minute, 30-seconds");
-        answerList.add("Jul. 14, 1968");
+        answerList.add("Three-minute, 22-seconds");
 
         answerIndex = 0;
         explanation = "Apollo 8 launched at Dec. 21, 1968; 7:51 a.m. EST";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
 
         facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "When did the loss of signal occor during the Apollo 8 mission when the austronauts went behind the moon?";
+
+        answerList.add("68 hours, 58 minutes, 45 seconds ");
+        answerList.add("40 hours, 9 minutes, 32 seconds ");
+        answerList.add("81 hours, 36 minutes, 22 seconds ");
+        answerList.add("33 hours, 21 minutes, 19 seconds ");
+
+        answerIndex = 0;
+        explanation = "Loss of signal occurred at 68 hours, 58 minutes, 45 seconds when Apollo 8 passed behind the moon. At that moment, NASA's three astronauts became the first humans to see the moon's far side.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How long did the first Lunar orbit insertion burn last on the Apollo 8 mission?";
+
+        answerList.add("Four minutes, two seconds");
+        answerList.add("Six minutes, eight-seconds");
+        answerList.add("Nine-minute, 30-seconds");
+        answerList.add("Two-minute, 59-seconds");
+
+        answerIndex = 0;
+        explanation = "The first lunar orbit insertion burn, at 69 hours, 8 minutes, 52 seconds, lasted four minutes, two seconds and reduced the spacecraft's 8,400 feet per second velocity by 2,994 feet per second";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the size of the orbit around the moon on the Apollo 8 mission?";
+
+        answerList.add("70 miles");
+        answerList.add("12 miles");
+        answerList.add("112 miles");
+        answerList.add("44 miles");
+
+        answerIndex = 0;
+        explanation = "The orbit circularized at 70 miles by the second lunar orbit insertion burn of 135 feet per second, performed at the start of the third revolution, again on the back side of the moon";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "On Christmas eve, what message did the Apollo 8 astronauts brodcast home?";
+
+        answerList.add("Merry Christmas, as well as verces from the book of Genesis in the Bible");
+        answerList.add("A call to more science in the education system");
+        answerList.add("Endorcment of a political cannadent");
+        answerList.add("A call to follow your country");
+
+        answerIndex = 0;
+        explanation = "During a telecast on Christmas Eve, the crew read verses from the first chapter of Genesis and wished viewers, \"Good night, good luck, a Merry Christmas and God bless all of you - all of you on the good Earth.\"";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the re-entry velocity of Apollo 8";
+
+        answerList.add("24,696 mph");
+        answerList.add("62,471 mph");
+        answerList.add("13,942 mph");
+        answerList.add("44,326 mph");
+
+        answerIndex = 0;
+        explanation = "The re-entry velocity was 24,696 mph.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the re-entry heat on the heatsheild of Apollo 8";
+
+        answerList.add("5,000 degrees F");
+        answerList.add("15,000 degrees F");
+        answerList.add("8,000 degrees F");
+        answerList.add("2,000 degrees F");
+
+        answerIndex = 0;
+        explanation = "The heatshield withstood teampatures of 5,000 degrees F";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the re-entry heat on the heatsheild of Apollo 8";
+
+        answerList.add("5,000 degrees F");
+        answerList.add("15,000 degrees F");
+        answerList.add("8,000 degrees F");
+        answerList.add("2,000 degrees F");
+
+        answerIndex = 0;
+        explanation = "The heatshield withstood teampatures of 5,000 degrees F";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the re-entry heat on the heatsheild of Apollo 8";
+
+        answerList.add("5,000 degrees F");
+        answerList.add("15,000 degrees F");
+        answerList.add("8,000 degrees F");
+        answerList.add("2,000 degrees F");
+
+        answerIndex = 0;
+        explanation = "The heatshield withstood teampatures of 5,000 degrees F";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
+
+        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+
+
         //end
         return facts;
     }
