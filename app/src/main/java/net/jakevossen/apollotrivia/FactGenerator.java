@@ -72,7 +72,7 @@ public class FactGenerator {
         answerList.add("Not known, the radio data failed");
 
         answerIndex = 0;
-        explanation = "\"...one small step for a man, one giant leap for mankind\" were the first words on the moon, spoken my Niel Armstrong. He claims he siad \"...one small step for a man, AND ONE giant leap for mankind\", but the radio did not pick up on it.";
+        explanation = "\"...one small step for a man, one giant leap for mankind\" were the first words on the moon, spoken my Neil Armstrong. He claims he siad \"...one small step for a man, AND ONE giant leap for mankind\", but the radio did not pick up on it.";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
 
         facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
@@ -117,7 +117,7 @@ public class FactGenerator {
         answerList.add("Delta");
 
         answerIndex = 0;
-        explanation = "Saturn were the rockets primarily used during the Apollo missions.";
+        explanation = "Rockets named Saturn were primarily used during the Apollo missions.";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo1.html";
 
         facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
@@ -262,19 +262,19 @@ public class FactGenerator {
         question = "What was the point of keeping the S-IVB part of the craft in orbit with them in the Apollo 7 mission?";
 
         answerList.add("So they could simulate docking");
-        answerList.add("It contained nessesary food and supplies");
-        answerList.add("They didn't want too, the jetison failed");
-        answerList.add("It was part of a science equitment that they needed");
+        answerList.add("It contained necessary food and supplies");
+        answerList.add("They didn't want to, the jettison failed");
+        answerList.add("It was part of science equipment they needed");
 
         answerIndex = 0;
-        explanation = "They used the jettision part of the ship to simulate docking, a nessesary part of the lunar mission";
+        explanation = "They used the jettison part of the ship to simulate docking, a necessary part of the lunar mission";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo7.html";
 
         facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
 
         //new question
         answerList.clear();
-        question = "How did the engine preform on the Apollo 7 mission?";
+        question = "How did the engine perform on the Apollo 7 mission?";
 
         answerList.add("Nearly perfectly");
         answerList.add("Incredibly poorly, and it was difficult to return from orbit");
@@ -304,7 +304,7 @@ public class FactGenerator {
 
         //new question
         answerList.clear();
-        question = "What was one of the medical issues the astronauts expeced once Apollo 7";
+        question = "What was one of the medical issues the astronauts experienced on Apollo 7?";
 
         answerList.add("A bad cold");
         answerList.add("Dehydration");
@@ -321,13 +321,13 @@ public class FactGenerator {
         answerList.clear();
         question = "What was the landing spot of Apollo 7?";
 
-        answerList.add("27 degrees, 32 minutes north, and 64 degrees, four minutes west");
+        answerList.add("27 degrees, 32 minutes north, and 64 degrees, 4 minutes west");
         answerList.add("31 degrees, 19 minutes north, and 44 degrees, 12 minutes west");
         answerList.add("25 degrees, 40 minutes north, and 66 degrees, 52 minutes west");
         answerList.add("12 degrees, 23 minutes north, and 12 degrees, 44 minutes west");
 
         answerIndex = 0;
-        explanation = "Apollo's flotation bags had their first try out when the spacecraft, considered a \"lousy boat,\" splashed down in the Atlantic southeast of Bermuda, less than 2 kilometers from the planned impact point. Landing location was 27 degrees, 32 minutes north, and 64 degrees, four minutes west. The module turned upside down, but when inflated, the brightly colored bags flipped it upright.";
+        explanation = "Apollo's flotation bags had their first try out when the spacecraft, considered a \"lousy boat,\" splashed down in the Atlantic southeast of Bermuda, less than 2 kilometers from the planned impact point. The landing location was 27 degrees, 32 minutes north, and 64 degrees, 4 minutes west. The module turned upside down, but when inflated, the brightly colored bags flipped it upright.";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo7.html";
 
         facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
@@ -381,22 +381,22 @@ public class FactGenerator {
 
         //new question
         answerList.clear();
-        question = "How long was the burn that set Apollo 8 to the moon?";
+        question = "How long was the burn that sent Apollo 8 to the moon?";
 
-        answerList.add("Five-minute, 17-seconds");
-        answerList.add("Two-minute, 45-seconds");
-        answerList.add("Eight-minute, 30-seconds");
-        answerList.add("Three-minute, 22-seconds");
+        answerList.add("Five-minutes, 17-seconds");
+        answerList.add("Two-minutes, 45-seconds");
+        answerList.add("Eight-minutes, 30-seconds");
+        answerList.add("Three-minutes, 22-seconds");
 
         answerIndex = 0;
-        explanation = "Apollo 8 launched at Dec. 21, 1968; 7:51 a.m. EST";
+        explanation = "The burn lasted Five-minues, 17 seconds";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
 
         facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
 
         //new question
         answerList.clear();
-        question = "When did the loss of signal occor during the Apollo 8 mission when the austronauts went behind the moon?";
+        question = "When did the loss of signal occur during the Apollo 8 mission when the austronauts went behind the moon?";
 
         answerList.add("68 hours, 58 minutes, 45 seconds ");
         answerList.add("40 hours, 9 minutes, 32 seconds ");
@@ -443,9 +443,9 @@ public class FactGenerator {
         answerList.clear();
         question = "On Christmas eve, what message did the Apollo 8 astronauts brodcast home?";
 
-        answerList.add("Merry Christmas, as well as verces from the book of Genesis in the Bible");
+        answerList.add("Merry Christmas, as well as verses from the book of Genesis in the Bible");
         answerList.add("A call to more science in the education system");
-        answerList.add("Endorcment of a political cannadent");
+        answerList.add("Endorsement of a political candidate");
         answerList.add("A call to follow your country");
 
         answerIndex = 0;
@@ -456,7 +456,7 @@ public class FactGenerator {
 
         //new question
         answerList.clear();
-        question = "What was the re-entry velocity of Apollo 8";
+        question = "What was the re-entry velocity of Apollo 8?";
 
         answerList.add("24,696 mph");
         answerList.add("62,471 mph");
@@ -471,37 +471,7 @@ public class FactGenerator {
 
         //new question
         answerList.clear();
-        question = "What was the re-entry heat on the heatsheild of Apollo 8";
-
-        answerList.add("5,000 degrees F");
-        answerList.add("15,000 degrees F");
-        answerList.add("8,000 degrees F");
-        answerList.add("2,000 degrees F");
-
-        answerIndex = 0;
-        explanation = "The heatshield withstood teampatures of 5,000 degrees F";
-        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
-
-        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
-
-        //new question
-        answerList.clear();
-        question = "What was the re-entry heat on the heatsheild of Apollo 8";
-
-        answerList.add("5,000 degrees F");
-        answerList.add("15,000 degrees F");
-        answerList.add("8,000 degrees F");
-        answerList.add("2,000 degrees F");
-
-        answerIndex = 0;
-        explanation = "The heatshield withstood teampatures of 5,000 degrees F";
-        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
-
-        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
-
-        //new question
-        answerList.clear();
-        question = "What was the re-entry heat on the heatsheild of Apollo 8";
+        question = "What was the re-entry heat on the heatsheild of Apollo 8?";
 
         answerList.add("5,000 degrees F");
         answerList.add("15,000 degrees F");
