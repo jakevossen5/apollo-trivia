@@ -22,14 +22,14 @@ import java.io.InputStream;
 public class MainActivity extends AppCompatActivity {
     private Fact newRandFact;
     private static Facts facts;
-    private static  boolean isFirstTime = true;
+    private static  Boolean isFirstTime = true;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //first time checker
-        if (isFirstTime){
+        if ((isFirstTime == null) || isFirstTime || facts.equals(null)){
             genAllQuestions();
             isFirstTime = false;
         }
