@@ -3,6 +3,7 @@ package net.jakevossen.apollotrivia;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 /**
@@ -12,9 +13,13 @@ import java.util.Random;
 public class Facts {
 
     private ArrayList<Fact> facts = new ArrayList<Fact>();
-    private ArrayList<Fact> usedFacts = new ArrayList<Fact>();
+    private static int curIndex = 0;
     public Facts(){
-
+        randomizeArray();
+    }
+    public void randomizeArray(){
+        long seed = System.nanoTime();
+        Collections.shuffle(facts, new Random(seed));
     }
     public void addFact(Fact fact){
         facts.add(fact);
@@ -23,15 +28,16 @@ public class Facts {
         return facts.get(index);
     }
     public Fact getRandomFact(){
-        Fact fact = facts.get((new Random()).nextInt(facts.size()));
-        usedFacts.add(fact);
-        facts.remove(fact);
-        if(usedFacts.size() == 0){
-            Log.d("TAG", "Reloading the used questions");
-            for (int i = 0; i < usedFacts.size(); i++){
-                facts.add(usedFacts.get(i));
-            }
+        if (curIndex < facts.size()){
+            Fact fact = getFact(curIndex);
+            curIndex++;
+            return fact;
         }
-        return fact;
+        else {
+            randomizeArray();
+            curIndex = 0;
+            curIndex++;
+            return facts.get(0);
+        }
     }
 }

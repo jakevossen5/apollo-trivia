@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
     private void genAllQuestions() {
         FactGenerator factGenerator = new FactGenerator();
         facts = factGenerator.genFacts();
+        facts.randomizeArray();
         Log.d("TAG", "Generated questions");
     }
 
