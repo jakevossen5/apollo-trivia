@@ -20,6 +20,7 @@
 
         <TextView
             android:id="@+id/textView"
+            android:paddingLeft="10dp"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="This app was created by me to learn more about Android development as well as the Apollo missions, two things that I find really interesting. I might open source it one of these days but not yet. If you have questions, or want to contribute trivia, contact me at apollotrivia@jakevossen.net. Check out my other projects and information and jakevossen.net"
