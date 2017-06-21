@@ -16,20 +16,17 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Fact {
     private String question;
     private ArrayList<String> answers = new ArrayList<String>();
-    private int correctAnswerIndex;
     private String correctAnswer;
     private String explanation;
     private String source;
-    private boolean hasBeenUsed = false;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public Fact(String question, ArrayList<String> answersIn, int correctAnswerIndex, String explanation, String source){
+    public Fact(String question, ArrayList<String> answersIn, String explanation, String source){
         this.question = question;
         this.answers.add(answersIn.get(0));
         this.answers.add(answersIn.get(1));
         this.answers.add(answersIn.get(2));
         this.answers.add(answersIn.get(3));
-        this.correctAnswerIndex = correctAnswerIndex;
-        this.correctAnswer = answers.get(correctAnswerIndex);
+        this.correctAnswer = answers.get(0);
         this.explanation = explanation;
         this.source = source;
         randomize(answers);
@@ -65,19 +62,10 @@ public class Fact {
     public String getCorrectAnswer(){
         return correctAnswer;
     }
-    public int correctAnswerIndex(){
-        return correctAnswerIndex;
-    }
     public String getExplanation() {
         return explanation;
     }
     public String getSource() {
         return source;
-    }
-    public void setHasBeenUsed(boolean used) {
-        hasBeenUsed = used;
-    }
-    public boolean getHasBeenUsed(){
-        return hasBeenUsed;
     }
 }
