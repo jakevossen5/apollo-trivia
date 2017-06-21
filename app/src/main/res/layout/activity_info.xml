@@ -12,37 +12,50 @@
     <RelativeLayout
         android:layout_width="350dp"
         android:layout_height="495dp"
-        android:layout_margin="10dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
         tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
+        tools:layout_editor_absoluteX="8dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
 
         <TextView
-            android:id="@+id/textView"
-            android:paddingLeft="10dp"
+            android:id="@+id/infoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/info"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="This app was created by me to learn more about Android development as well as the Apollo missions, two things that I find really interesting. I might open source it one of these days but not yet. If you have questions, or want to contribute trivia, contact me at apollotrivia@jakevossen.net. Check out my other projects and information and jakevossen.net"
             tools:layout_editor_absoluteX="17dp"
             tools:layout_editor_absoluteY="16dp"
-            android:layout_alignLeft="@+id/goBackToMain"
-            android:layout_alignStart="@+id/goBackToMain" />
+            android:layout_below="@+id/infoTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <Button
             android:id="@+id/goBackToMain"
             android:layout_width="330dp"
             android:layout_height="48dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textView"
             android:layout_weight="1"
             android:onClick="goToMainActivity"
             android:text="Back to questions"
             tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="140dp" />
+            tools:layout_editor_absoluteY="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/info"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 
 
-
-    </RelativeLayout>
+</RelativeLayout>

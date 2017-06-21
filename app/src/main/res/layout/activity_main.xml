@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="submitGenButton"
-            android:text="Submit/Generate"
+            android:text="Submit"
             android:layout_below="@+id/answersRadioGroup"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="14dp" />
