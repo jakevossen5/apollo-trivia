@@ -486,34 +486,33 @@ public class FactGenerator {
 
         //new question
         answerList.clear();
-        question = "What was the re-entry heat on the heatsheild of Apollo 8";
+        question = "What time did the Apollo 8 crew get to the ship?";
 
-        answerList.add("5,000 degrees F");
-        answerList.add("15,000 degrees F");
-        answerList.add("8,000 degrees F");
-        answerList.add("2,000 degrees F");
+        answerList.add("12:20 p.m. EST");
+        answerList.add("3:16 p.m. EST");
+        answerList.add("1:12 a.m. EST");
+        answerList.add("7:41 p.m. EST");
 
         answerIndex = 0;
-        explanation = "The heatshield withstood teampatures of 5,000 degrees F";
+        explanation = "The Apollo 8 crew reached the recovery ship at 12:20 p.m. EST.";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
 
         facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
 
         //new question
         answerList.clear();
-        question = "What was the re-entry heat on the heatsheild of Apollo 8";
+        question = "How long did the Apollo 8 crew have to wait in the command module in the ocean?";
 
-        answerList.add("5,000 degrees F");
-        answerList.add("15,000 degrees F");
-        answerList.add("8,000 degrees F");
-        answerList.add("2,000 degrees F");
+        answerList.add("50 minutes");
+        answerList.add("2 hours");
+        answerList.add("4 minutes");
+        answerList.add("38 minutes");
 
         answerIndex = 0;
-        explanation = "The heatshield withstood teampatures of 5,000 degrees F";
+        explanation = " According to prior planning, helicopters and aircraft hovered over the spacecraft, and pararescue personnel were not deployed until local sunrise, 50 minutes after splashdown.";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html";
 
         facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
-
 
         //end
         return facts;
