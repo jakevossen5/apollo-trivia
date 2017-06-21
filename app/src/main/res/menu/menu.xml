@@ -6,6 +6,8 @@
 
         <item android:id="@+id/info"
             android:title="Info" />
+        <item android:id="@+id/version"
+            android:title="Version" />
 
     </item>
 </menu>
