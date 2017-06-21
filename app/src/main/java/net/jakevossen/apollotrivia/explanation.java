@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-public class explanation extends AppCompatActivity {
+public class explanation extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,30 +27,6 @@ public class explanation extends AppCompatActivity {
 
         setExplanation();
         setSource();
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
-        switch (item.getItemId()) {
-            case R.id.info:
-                showInfo();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
-    private void showInfo() {
-        Intent intent = new Intent(this, Info.class);
-        startActivity(intent);
     }
 
     private void setSource() {

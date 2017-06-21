@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import java.io.InputStream;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     private Fact newRandFact;
     private static Facts facts;
     private static  Boolean isFirstTime = true;
@@ -39,29 +39,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
-        switch (item.getItemId()) {
-            case R.id.info:
-                showInfo();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
-    private void showInfo() {
-        Intent intent = new Intent(this, Info.class);
-        startActivity(intent);
-    }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void genNewQuestion() {
