@@ -492,11 +492,10 @@ public class FactGenerator {
         answerList.add("David R. Scott");
         answerList.add("Alan L. Bean");
 
-        answerIndex = 0;
         explanation = "James A. McDivitt was the commander of the Apollo 9 mission.";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo9.html";
 
-        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+        facts.addFact(new Fact(question,answerList,explanation,source));
 
         //new question
         answerList.clear();
@@ -507,11 +506,10 @@ public class FactGenerator {
         answerList.add("May 21, 1968");
         answerList.add("Jan. 17, 1970");
 
-        answerIndex = 0;
         explanation = "Apollo 9 launched on March 3, 1969";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo9.html";
 
-        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+        facts.addFact(new Fact(question,answerList,explanation,source));
 
         //new question
         answerList.clear();
@@ -522,11 +520,10 @@ public class FactGenerator {
         answerList.add("112 by 113 miles");
         answerList.add("155 by 160 miles");
 
-        answerIndex = 0;
         explanation = "On the first day, and after orbit injection of the combined S-IVB stage and its SLA-LM-CSM payload, venting of the S-IVB propellant tanks changed the orbit to 123 by 127 miles";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo9.html";
 
-        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+        facts.addFact(new Fact(question,answerList,explanation,source));
 
         //new question
         answerList.clear();
@@ -537,11 +534,10 @@ public class FactGenerator {
         answerList.add("Rocket launching");
         answerList.add("Orbits");
 
-        answerIndex = 0;
         explanation = "NASA wanted to make sure that docking was going too work";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo9.html";
 
-        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+        facts.addFact(new Fact(question,answerList,explanation,source));
 
         //new question
         answerList.clear();
@@ -552,11 +548,10 @@ public class FactGenerator {
         answerList.add("Engine misfire");
         answerList.add("Bad interpretation of measurements");
 
-        answerIndex = 0;
         explanation = "This included a 367-second firing of the LM descent engine to simulate the throttle pattern to be used during a lunar landing mission. McDivitt controlled the final 59 seconds, varying the thrust from 10 to 40 percent and shutting it off manually. This was the first crewed throttling of an engine in space and increased the spacecraft's orbit to 130 by 300 miles.";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo9.html";
 
-        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+        facts.addFact(new Fact(question,answerList,explanation,source));
 
         //new question
         answerList.clear();
@@ -567,11 +562,10 @@ public class FactGenerator {
         answerList.add("Radio connection issues");
         answerList.add("Saftey risks");
 
-        answerIndex = 0;
         explanation = "Because of nausea, Schweickart's scheduled two-hour EVA to simulate external transfer rescue techniques was canceled. Instead, he climbed out of the LM porch for a 37.5 minute EVA, testing the EVA mobility unit, including the portable life support system backpack.";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo9.html";
 
-        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+        facts.addFact(new Fact(question,answerList,explanation,source));
 
         //new question
         answerList.clear();
@@ -582,11 +576,10 @@ public class FactGenerator {
         answerList.add("Ship was having issues during entry and they had to cancel");
         answerList.add("The ship that was supposed to pick them up was down for maintenance");
 
-        answerIndex = 0;
         explanation = "On March 13, the tenth day, re-entry was extended by one revolution because of heavy seas in the primary recovery area.";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo9.html";
 
-        facts.addFact(new Fact(question,answerList,answerIndex,explanation,source));
+        facts.addFact(new Fact(question,answerList,explanation,source));
 
 
 
