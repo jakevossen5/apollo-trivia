@@ -97,9 +97,18 @@
             android:id="@+id/answerFracTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="Correct/total"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/answerFracNumerator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answerFracTitle"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textSize="42sp" />
 
     </RelativeLayout>
 
