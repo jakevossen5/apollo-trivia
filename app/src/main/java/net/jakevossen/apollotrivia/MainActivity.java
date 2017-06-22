@@ -23,6 +23,7 @@ public class MainActivity extends BaseActivity {
     private Fact newRandFact;
     private static Facts facts;
     private static  Boolean isFirstTime = true;
+    private static int correctStreak;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +36,13 @@ public class MainActivity extends BaseActivity {
         }
         //set the questions
         genNewQuestion();
+        showCurStreak();
 
+    }
 
+    private void showCurStreak() {
+        TextView curStreak = (TextView) findViewById(R.id.streakCounter);
+        curStreak.setText("" + correctStreak);
     }
 
 
@@ -71,7 +77,7 @@ public class MainActivity extends BaseActivity {
         Intent intent = new Intent(this, explanation.class);
         RadioGroup radioGroup = (RadioGroup)findViewById(R.id.answersRadioGroup);
 
-
+        //if no button was selected
         if (radioGroup.getCheckedRadioButtonId() == -1){
             //make a toast!
             Context context = getApplicationContext();
@@ -85,6 +91,12 @@ public class MainActivity extends BaseActivity {
             int selectedId = radioGroup.getCheckedRadioButtonId();
             RadioButton radioButton = (RadioButton) findViewById(selectedId);
 
+            if (isItCorrect(newRandFact,radioButton)){
+                correctStreak++;
+            }
+            else{
+                correctStreak = 0;
+            }
             intent.putExtra("explanation",newRandFact.getExplanation());
             intent.putExtra("isItCorrect",isItCorrect(newRandFact,radioButton));
             intent.putExtra("source",newRandFact.getSource());

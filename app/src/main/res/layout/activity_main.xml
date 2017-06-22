@@ -71,6 +71,36 @@
             android:layout_below="@+id/answersRadioGroup"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/streakCounter"
+            android:textSize="42sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_below="@+id/streakTitle"
+            android:layout_alignLeft="@+id/streakTitle"
+            android:layout_alignStart="@+id/streakTitle"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp" />
+
+        <TextView
+            android:id="@+id/streakTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Streak"
+            android:layout_below="@+id/sumbitGenButton"
+            android:layout_alignLeft="@+id/sumbitGenButton"
+            android:layout_alignStart="@+id/sumbitGenButton" />
+
+        <TextView
+            android:id="@+id/answerFracTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
