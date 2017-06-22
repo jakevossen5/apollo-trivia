@@ -63,7 +63,7 @@ public class MainActivity extends BaseActivity {
         if (den > 0){
             double percentDouble = (double)num / den;
             percentDouble = percentDouble * 100;
-            temp = (int)percentDouble;
+            temp = (int)Math.round(percentDouble);
         }
         return temp;
     }
