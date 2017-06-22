@@ -24,6 +24,8 @@ public class MainActivity extends BaseActivity {
     private static Facts facts;
     private static  Boolean isFirstTime = true;
     private static int correctStreak;
+    private static int totalCorrect;
+    private static int totalQuestionsAsked;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +38,19 @@ public class MainActivity extends BaseActivity {
         }
         //set the questions
         genNewQuestion();
-        showCurStreak();
+        //generate the stats
+        showInGameStats();
 
     }
 
-    private void showCurStreak() {
+    private void showInGameStats() {
+        //cuurent streak
         TextView curStreak = (TextView) findViewById(R.id.streakCounter);
         curStreak.setText("" + correctStreak);
+
+        //answer frac
+        TextView fracCorrect = (TextView) findViewById(R.id.answerFracValue);
+        fracCorrect.setText("" + totalCorrect + "/" + totalQuestionsAsked);
     }
 
 
@@ -90,9 +98,11 @@ public class MainActivity extends BaseActivity {
         else {
             int selectedId = radioGroup.getCheckedRadioButtonId();
             RadioButton radioButton = (RadioButton) findViewById(selectedId);
-
+            totalQuestionsAsked++;
             if (isItCorrect(newRandFact,radioButton)){
+                //if it was correct
                 correctStreak++;
+                totalCorrect++;
             }
             else{
                 correctStreak = 0;
