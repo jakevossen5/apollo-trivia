@@ -23,6 +23,9 @@ public class MainActivity extends BaseActivity {
     private Fact newRandFact;
     private static Facts facts;
     private static  Boolean isFirstTime = true;
+    private static int correctStreak;
+    private static int totalCorrect;
+    private static int totalQuestionsAsked;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +38,34 @@ public class MainActivity extends BaseActivity {
         }
         //set the questions
         genNewQuestion();
+        //generate the stats
+        showInGameStats();
 
+    }
 
+    private void showInGameStats() {
+        //cuurent streak
+        TextView curStreak = (TextView) findViewById(R.id.streakCounter);
+        curStreak.setText("" + correctStreak);
+
+        //answer frac
+        TextView fracCorrect = (TextView) findViewById(R.id.answerFracValue);
+        fracCorrect.setText("" + totalCorrect + "/" + totalQuestionsAsked);
+
+        //percentage
+        int percentage = getPercent(totalCorrect, totalQuestionsAsked);
+        TextView correctPercentage = (TextView) findViewById(R.id.correctPercentageValue);
+        correctPercentage.setText("" + percentage + "%");
+    }
+
+    private int getPercent(int num, int den) {
+        int temp = 0;
+        if (den > 0){
+            double percentDouble = (double)num / den;
+            percentDouble = percentDouble * 100;
+            temp = (int)percentDouble;
+        }
+        return temp;
     }
 
 
@@ -71,7 +100,7 @@ public class MainActivity extends BaseActivity {
         Intent intent = new Intent(this, explanation.class);
         RadioGroup radioGroup = (RadioGroup)findViewById(R.id.answersRadioGroup);
 
-
+        //if no button was selected
         if (radioGroup.getCheckedRadioButtonId() == -1){
             //make a toast!
             Context context = getApplicationContext();
@@ -84,7 +113,15 @@ public class MainActivity extends BaseActivity {
         else {
             int selectedId = radioGroup.getCheckedRadioButtonId();
             RadioButton radioButton = (RadioButton) findViewById(selectedId);
-
+            totalQuestionsAsked++;
+            if (isItCorrect(newRandFact,radioButton)){
+                //if it was correct
+                correctStreak++;
+                totalCorrect++;
+            }
+            else{
+                correctStreak = 0;
+            }
             intent.putExtra("explanation",newRandFact.getExplanation());
             intent.putExtra("isItCorrect",isItCorrect(newRandFact,radioButton));
             intent.putExtra("source",newRandFact.getSource());
