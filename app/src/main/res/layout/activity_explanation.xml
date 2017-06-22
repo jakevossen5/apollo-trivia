@@ -49,6 +49,7 @@
             android:layout_marginTop="12dp"
             android:layout_weight="0.03"
             android:autoLink="web"
+            android:textColorLink="@color/link"
             android:text="Error getting source" />
 
 
