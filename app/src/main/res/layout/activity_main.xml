@@ -11,29 +11,29 @@
         android:layout_width="350dp"
         android:layout_height="495dp"
         android:layout_margin="16dp"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="8dp">
 
         <TextView
             android:id="@+id/question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/question"
-            android:layout_marginTop="20dp"
-            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/question" />
 
         <RadioGroup
             android:id="@+id/answersRadioGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:layout_below="@+id/question"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="11dp">
+            android:layout_below="@+id/question"
+            android:layout_marginTop="11dp"
+            android:paddingLeft="10dp">
 
             <RadioButton
                 android:id="@+id/answer0RadioButton"
@@ -65,50 +65,50 @@
             android:id="@+id/sumbitGenButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="submitGenButton"
-            android:text="Submit"
             android:layout_below="@+id/answersRadioGroup"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="14dp" />
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:onClick="submitGenButton"
+            android:text="Submit" />
 
         <TextView
             android:id="@+id/streakCounter"
-            android:textSize="42sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            android:layout_below="@+id/streakTitle"
             android:layout_alignLeft="@+id/streakTitle"
             android:layout_alignStart="@+id/streakTitle"
+            android:layout_below="@+id/streakTitle"
             android:layout_marginLeft="31dp"
-            android:layout_marginStart="31dp" />
+            android:layout_marginStart="31dp"
+            android:text="0"
+            android:textSize="42sp" />
 
         <TextView
             android:id="@+id/streakTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Current Streak"
-            android:layout_below="@+id/sumbitGenButton"
             android:layout_alignLeft="@+id/sumbitGenButton"
-            android:layout_alignStart="@+id/sumbitGenButton" />
+            android:layout_alignStart="@+id/sumbitGenButton"
+            android:layout_below="@+id/sumbitGenButton"
+            android:text="Current Streak" />
 
         <TextView
             android:id="@+id/answerFracTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Correct/total"
-            android:layout_centerVertical="true"
+            android:layout_below="@+id/sumbitGenButton"
             android:layout_centerHorizontal="true" />
 
         <TextView
             android:id="@+id/answerFracValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="0/0"
+            android:textSize="42sp"
             android:layout_below="@+id/answerFracTitle"
-            android:layout_centerHorizontal="true"
-            android:text=""
-            android:textSize="42sp" />
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 
