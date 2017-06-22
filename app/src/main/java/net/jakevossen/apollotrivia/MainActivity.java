@@ -51,6 +51,21 @@ public class MainActivity extends BaseActivity {
         //answer frac
         TextView fracCorrect = (TextView) findViewById(R.id.answerFracValue);
         fracCorrect.setText("" + totalCorrect + "/" + totalQuestionsAsked);
+
+        //percentage
+        int percentage = getPercent(totalCorrect, totalQuestionsAsked);
+        TextView correctPercentage = (TextView) findViewById(R.id.correctPercentageValue);
+        correctPercentage.setText("" + percentage + "%");
+    }
+
+    private int getPercent(int num, int den) {
+        int temp = 0;
+        if (den > 0){
+            double percentDouble = (double)num / den;
+            percentDouble = percentDouble * 100;
+            temp = (int)percentDouble;
+        }
+        return temp;
     }
 
 

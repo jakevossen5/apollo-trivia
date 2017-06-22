@@ -97,7 +97,7 @@
             android:id="@+id/answerFracTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correct/total"
+            android:text="Correct/Total"
             android:layout_below="@+id/sumbitGenButton"
             android:layout_centerHorizontal="true" />
 
@@ -109,6 +109,25 @@
             android:textSize="42sp"
             android:layout_below="@+id/answerFracTitle"
             android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/correctPercentageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Percentage"
+            android:layout_below="@+id/sumbitGenButton"
+            android:layout_alignRight="@+id/sumbitGenButton"
+            android:layout_alignEnd="@+id/sumbitGenButton" />
+
+        <TextView
+            android:id="@+id/correctPercentageValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textSize="42sp"
+            android:layout_below="@+id/correctPercentageTitle"
+            android:layout_alignRight="@+id/correctPercentageTitle"
+            android:layout_alignEnd="@+id/correctPercentageTitle" />
 
     </RelativeLayout>
 
