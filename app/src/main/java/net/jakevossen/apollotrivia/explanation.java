@@ -1,6 +1,7 @@
 package net.jakevossen.apollotrivia;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,9 +20,11 @@ public class explanation extends BaseActivity {
 
         TextView correctOrNot = (TextView)findViewById(R.id.correctOrNot);
         if (isAnswerCorrect()){
+            correctOrNot.setTextColor(getResources().getColor(R.color.correctColor));
             correctOrNot.setText("Correct!");
         }
         else {
+            correctOrNot.setTextColor(getResources().getColor(R.color.incorrectColor));
             correctOrNot.setText("Incorrect");
         }
 

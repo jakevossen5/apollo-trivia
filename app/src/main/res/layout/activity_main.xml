@@ -7,12 +7,13 @@
     tools:context="net.jakevossen.apollotrivia.MainActivity">
 
 
-    <RelativeLayout
-        android:layout_width="350dp"
-        android:layout_height="495dp"
-        android:layout_margin="16dp"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="8dp">
+    <LinearLayout
+        android:layout_width="355dp"
+        android:layout_height="483dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="14dp">
 
         <TextView
             android:id="@+id/question"
@@ -59,76 +60,129 @@
                 android:layout_height="wrap_content"
                 android:text="@string/answer3" />
 
+            <Button
+                android:id="@+id/sumbitGenButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answersRadioGroup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:onClick="submitGenButton"
+                android:text="Submit" />
+
         </RadioGroup>
 
-        <Button
-            android:id="@+id/sumbitGenButton"
-            android:layout_width="300dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/answersRadioGroup"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="14dp"
-            android:layout_weight="1"
-            android:onClick="submitGenButton"
-            android:text="Submit" />
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="0.12">
 
-        <TextView
-            android:id="@+id/streakCounter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/streakTitle"
-            android:layout_alignStart="@+id/streakTitle"
-            android:layout_below="@+id/streakTitle"
-            android:layout_marginLeft="31dp"
-            android:layout_marginStart="31dp"
-            android:text="0"
-            android:textSize="42sp" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-        <TextView
-            android:id="@+id/streakTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/sumbitGenButton"
-            android:layout_alignStart="@+id/sumbitGenButton"
-            android:layout_below="@+id/sumbitGenButton"
-            android:text="Current Streak" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp">
 
-        <TextView
-            android:id="@+id/answerFracTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Correct/Total"
-            android:layout_below="@+id/sumbitGenButton"
-            android:layout_centerHorizontal="true" />
+                <TextView
+                    android:id="@+id/streakTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Current Streak" />
 
-        <TextView
-            android:id="@+id/answerFracValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0/0"
-            android:textSize="42sp"
-            android:layout_below="@+id/answerFracTitle"
-            android:layout_centerHorizontal="true" />
+                <TextView
+                    android:id="@+id/streakCounter"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="42sp" />
 
-        <TextView
-            android:id="@+id/correctPercentageTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Percentage"
-            android:layout_below="@+id/sumbitGenButton"
-            android:layout_alignRight="@+id/sumbitGenButton"
-            android:layout_alignEnd="@+id/sumbitGenButton" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/correctPercentageValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0%"
-            android:textSize="42sp"
-            android:layout_below="@+id/correctPercentageTitle"
-            android:layout_alignRight="@+id/correctPercentageTitle"
-            android:layout_alignEnd="@+id/correctPercentageTitle" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-    </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/answerFracTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Correct/Total" />
+
+                <TextView
+                    android:id="@+id/answerFracValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0/0"
+                    android:textSize="42sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/correctPercentageTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Percentage" />
+
+                <TextView
+                    android:id="@+id/correctPercentageValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0%"
+                    android:textSize="42sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
