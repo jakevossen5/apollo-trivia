@@ -1,16 +1,9 @@
 package net.jakevossen.apollotrivia;
 
-import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Jake on 6/16/2017.
