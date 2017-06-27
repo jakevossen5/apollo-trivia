@@ -9,7 +9,6 @@ import java.util.ArrayList;
  * Created by Jake on 6/16/2017.
  */
 public class FactGenerator {
-    InputStream inputStream;
 
     public FactGenerator(){ };
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
