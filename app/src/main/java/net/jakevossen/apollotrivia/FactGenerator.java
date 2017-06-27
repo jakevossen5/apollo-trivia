@@ -573,7 +573,131 @@ public class FactGenerator {
 
         facts.addFact(new Fact(question,answerList,explanation,source));
 
+        //new question
+        answerList.clear();
+        question = "How close did the new lunar module get to landing on the Apollo 10 mission?";
 
+        answerList.add("9 miles");
+        answerList.add("Less that 1 mile");
+        answerList.add("70 miles");
+        answerList.add("15 miles");
+
+        explanation = "The lunar module had a descent to about nine miles off the moon's surface";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo10.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the main purpose of Apollo 10";
+
+        answerList.add("Practice everything except the landing");
+        answerList.add("Refine radio transmissions");
+        answerList.add("See if the Saturn V rocket could lift that much weight");
+        answerList.add("Unknown, it has been clasified");
+
+        explanation = "The Apollo 10 mission encompassed all aspects of an actual crewed lunar landing, except the landing.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo10.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "Whats the velocity of Apollo 10 on the way to the moon?";
+
+        answerList.add("36,651 feet per second");
+        answerList.add("62,152 feet per second");
+        answerList.add("42,522 feet per second");
+        answerList.add("51,942 feet per second");
+
+        explanation = "One-and-a-half orbits later, translunar injection occurred. The S-IVB fired to increase velocity from 25,593 to 36,651 feet per second.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo10.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "Whats the velocity of Apollo 10 on the way to the moon?";
+
+        answerList.add("36,651 feet per second");
+        answerList.add("62,152 feet per second");
+        answerList.add("42,522 feet per second");
+        answerList.add("51,942 feet per second");
+
+        explanation = "The Apollo 10 crew members were Commander Thomas Stafford, Command Module Pilot John Young and Lunar Module Pilot Eugene Cernan.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo10.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "Who was the commander of Apollo 10?";
+
+        answerList.add("Thomas Stafford");
+        answerList.add("John Young");
+        answerList.add("Neil Armstrong");
+        answerList.add("George Washington");
+
+        explanation = "The Apollo 10 crew members were Commander Thomas Stafford, Command Module Pilot John Young and Lunar Module Pilot Eugene Cernan.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo10.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "Which Apollo mission had the first color braodcast?";
+
+        answerList.add("Apollo 10");
+        answerList.add("Apollo 8");
+        answerList.add("Apollo 9");
+        answerList.add("Apollo 14");
+
+        explanation = "The first live color TV transmissions to Earth began three hours after launch when Apollo 10 was 3,570 miles from Earth and concluded when the spacecraft was 9,428 miles away.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo10.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How big was the lunar orbit on Apollo 10?";
+
+        answerList.add("69 miles");
+        answerList.add("32 miles");
+        answerList.add("112 miles");
+        answerList.add("256 miles");
+
+        explanation = "The lunar orbit of Apollo 10 was approximately 69 miles.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo10.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the Lunar orbit of the Apollo 10 lunar module";
+
+        answerList.add("9.7 by 70.5 miles.");
+        answerList.add("17 by 142.1 miles.");
+        answerList.add("14.2 by 65.5 miles");
+        answerList.add("22.1 by 59.9 miles");
+
+        explanation = "To achieve a simulation of the future Apollo 11 landing, the LM descent engine fired for 27.4 seconds, with 10 percent thrust for the first 15 seconds and 40 percent thrust for the rest. This brought the LM to a new orbit of 9.7 by 70.5 miles.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo10.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the Lunar orbit of the Apollo 10 lunar module";
+
+        answerList.add("9.7 by 70.5 miles.");
+        answerList.add("17 by 142.1 miles.");
+        answerList.add("14.2 by 65.5 miles");
+        answerList.add("22.1 by 59.9 miles");
+
+        explanation = "To achieve a simulation of the future Apollo 11 landing, the LM descent engine fired for 27.4 seconds, with 10 percent thrust for the first 15 seconds and 40 percent thrust for the rest. This brought the LM to a new orbit of 9.7 by 70.5 miles.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo10.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
 
         //end
         return facts;
