@@ -703,7 +703,7 @@ public class FactGenerator {
 
         //new question
         answerList.clear();
-        question = "When did humans first land on the moon?";
+        question = "When did Apollo 11 launch?";
 
         answerList.add("July 16, 1969");
         answerList.add("July 8, 1969");
@@ -715,6 +715,47 @@ public class FactGenerator {
 
         facts.addFact(new Fact(question,answerList,explanation,source));
 
+        //new question
+        answerList.clear();
+        question = "Who was the commander of Apollo 11?";
+
+        answerList.add("Neil Armstrong");
+        answerList.add("Michael Collins");
+        answerList.add("Edwin \"Buzz\" Aldrin");
+        answerList.add("James A. McDivitt");
+
+        explanation = "The commander of Apollo 11 was Neil Armstrong";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "When did Apollo 11 land on the moon?";
+
+        answerList.add("July 20, 1969");
+        answerList.add("June 14, 1970");
+        answerList.add("Feb 2, 12968");
+        answerList.add("July 4, 1969");
+
+        explanation = "Apollo 11 landed on the moon on July 20, 1969";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the nickname of the lunar module on Apollo 11?";
+
+        answerList.add("Eagle");
+        answerList.add("Dragon");
+        answerList.add("Foxcat");
+        answerList.add("Falcon");
+
+        explanation = "Apollo 11 landed on the moon on July 20, 1969";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
         //end
         return facts;
     }
