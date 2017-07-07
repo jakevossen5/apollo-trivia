@@ -19,9 +19,6 @@
             android:id="@+id/question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:text="@string/question" />
@@ -30,9 +27,6 @@
             android:id="@+id/answersRadioGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/question"
             android:layout_marginTop="11dp"
             android:paddingLeft="10dp">
 
@@ -64,8 +58,6 @@
                 android:id="@+id/sumbitGenButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/answersRadioGroup"
-                android:layout_centerHorizontal="true"
                 android:layout_marginTop="14dp"
                 android:layout_weight="1"
                 android:onClick="submitGenButton"
@@ -82,8 +74,7 @@
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="wrap_content" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
