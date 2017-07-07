@@ -3,11 +3,9 @@ package net.jakevossen.apollotrivia;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created by Jake on 6/16/2017.

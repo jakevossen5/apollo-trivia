@@ -2,22 +2,15 @@ package net.jakevossen.apollotrivia;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.io.InputStream;
 
 public class MainActivity extends BaseActivity {
     private Fact newRandFact;
@@ -63,7 +56,7 @@ public class MainActivity extends BaseActivity {
         if (den > 0){
             double percentDouble = (double)num / den;
             percentDouble = percentDouble * 100;
-            temp = (int)percentDouble;
+            temp = (int)Math.round(percentDouble);
         }
         return temp;
     }
