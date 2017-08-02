@@ -752,7 +752,7 @@ public class FactGenerator {
         answerList.add("Foxcat");
         answerList.add("Falcon");
 
-        explanation = "Apollo 11 landed on the moon on July 20, 1969";
+        explanation = "Eagle was the name for the Apollo 11 Lunar Module";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
 
         facts.addFact(new Fact(question,answerList,explanation,source));
