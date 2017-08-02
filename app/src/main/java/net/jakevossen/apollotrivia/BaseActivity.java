@@ -2,15 +2,11 @@ package net.jakevossen.apollotrivia;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 public class BaseActivity extends AppCompatActivity {
@@ -31,6 +27,9 @@ public class BaseActivity extends AppCompatActivity {
             case R.id.version:
                 showVersion();
                 return true;
+            case R.id.website:
+                openWebsite();
+
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -49,5 +48,10 @@ public class BaseActivity extends AppCompatActivity {
     private void showInfo() {
         Intent intent = new Intent(this, Info.class);
         startActivity(intent);
+    }
+
+    private void openWebsite() {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://jakevossen.net/apollotrivia"));
+        startActivity(browserIntent);
     }
 }

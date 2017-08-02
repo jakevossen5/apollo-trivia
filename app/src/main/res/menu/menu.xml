@@ -8,6 +8,8 @@
             android:title="Info" />
         <item android:id="@+id/version"
             android:title="Version" />
+        <item android:id="@+id/website"
+            android:title="Web Version" />
 
     </item>
 </menu>
