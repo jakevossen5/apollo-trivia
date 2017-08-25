@@ -756,6 +756,63 @@ public class FactGenerator {
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
 
         facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How long was the retrograde burn in orbit on Apollo 11 in orbit around the moon";
+
+        answerList.add("357.5 seconds");
+        answerList.add("128.4 second");
+        answerList.add("833.1 seconds");
+        answerList.add("64.2 seconds");
+
+        explanation = "Apollo 11 landed on the moon on July 20, 1969";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How long was the retrograde burn in orbit around the moon on Apollo 11 to acheive lunar decent";
+
+        answerList.add("357.5 seconds");
+        answerList.add("128.4 second");
+        answerList.add("833.1 seconds");
+        answerList.add("64.2 seconds");
+
+        explanation = "The retrograde burn to get in orbit on Apollo 11 was 357.5 seconds";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How long was the retrograde burn in orbit around the moon on Apollo 11 begin lunar injection";
+
+        answerList.add("30 seconds");
+        answerList.add("12 second");
+        answerList.add("177 seconds");
+        answerList.add("17 seconds");
+
+        explanation = "The Apollo 11 burn to start the decent was 30 seconds";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How long was the retrograde burn in the lunar decent on Apollo 11 at the start of the powered decent";
+
+        answerList.add("756.3 seconds");
+        answerList.add("1002.1 second");
+        answerList.add("59.4 seconds");
+        answerList.add("491.9 seconds");
+
+        explanation = "The start burn of the Apollo 11 decent was 756.3";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
         //end
         return facts;
     }
