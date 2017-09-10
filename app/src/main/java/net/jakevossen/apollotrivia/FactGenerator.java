@@ -813,6 +813,148 @@ public class FactGenerator {
 
         facts.addFact(new Fact(question,answerList,explanation,source));
 
+        //new question
+        answerList.clear();
+        question = "What was one of the things left on the Lunar surface on Apollo 11";
+
+        answerList.add("Medallions bearing the names of the three Apollo 1 astronauts");
+        answerList.add("A lego set");
+        answerList.add("They didn't leave anything");
+        answerList.add("A paper written by the president");
+
+        explanation = "Commemorative medallions bearing the names of the three Apollo 1 astronauts who lost their lives in a launch pad fire, and two cosmonauts who also died in accidents, were left on the moon's surface. A one-and-a-half inch silicon disk, containing micro miniaturized goodwill messages from 73 countries, and the names of congressional and NASA leaders, also stayed behind.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "What was the name of the landing site of Apollo 11";
+
+        answerList.add("Sea of Tranquility");
+        answerList.add("Eagle");
+        answerList.add("Copernicus");
+        answerList.add("Pitatus");
+
+        explanation = "Partially piloted manually by Armstrong, the Eagle landed in the Sea of Tranquility in Site 2 at 0 degrees, 41 minutes, 15 seconds north latitude and 23 degrees, 26 minutes east longitude";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How far off was the landing on Apollo 11";
+
+        answerList.add("four miles downrange");
+        answerList.add("twenty-one miles downrange");
+        answerList.add("twelve miles short");
+        answerList.add("one mile short");
+
+        explanation = "This was about four miles downrange from the predicted touchdown point and occurred almost one-and-a-half minutes earlier than scheduled.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How long after launch did the first Apollo 11 astronaut land on the moon?";
+
+        answerList.add("109 hours, 42 minutes");
+        answerList.add("122 hours, 3 minutes");
+        answerList.add("89 hours, 14 minutes");
+        answerList.add("77 hours, 51 minutes");
+
+        explanation = "At about 109 hours, 42 minutes after launch, Armstrong stepped onto the moon.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How far did the Apollo 11 astronauts go from the LM?";
+
+        answerList.add("300 feet");
+        answerList.add("19 feet");
+        answerList.add("244 feet");
+        answerList.add("154 feet");
+
+        explanation = "During the EVA, in which they both ranged up to 300 feet from the Eagle, Aldrin deployed the Early Apollo Scientific Experiments Package, or EASEP, experiments, and Armstrong and Aldrin gathered and verbally reported on the lunar surface samples.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How long was Aldrin on the surface of the moon during Apollo 11?";
+
+        answerList.add("one hour, 33 minutes");
+        answerList.add("two hours, 11 minutes");
+        answerList.add("one hour,36 minutes");
+        answerList.add("four hours, 17 minutes");
+
+        explanation = "After Aldrin had spent one hour, 33 minutes on the surface, he re-entered the LM, followed 41 minutes later by Armstrong. The entire EVA phase lasted more than two-and-a-half hours, ending at 111 hours, 39 minutes into the mission.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How long was the LM on Apollo 11 on the Moon?";
+
+        answerList.add("21 hours, 36 minutes");
+        answerList.add("3 hours, 11 minutes");
+        answerList.add("30 hours, 14 minutes");
+        answerList.add("4 hours, 47 minutes");
+
+        explanation = "Armstrong and Aldrin spent 21 hours, 36 minutes on the moon's surface. After a rest period that included seven hours of sleep, the ascent stage engine fired at 124 hours, 22 minutes.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "How long was the total Apollo 11 flight?";
+
+        answerList.add("195 hours, 18 minutes, 35 seconds");
+        answerList.add("155 hours, 12 minutes, 44 seconds");
+        answerList.add("241 hours, 32 minutes, 9 seconds");
+        answerList.add("121 hours, 55 minutes, 38 seconds");
+
+        explanation = "After a flight of 195 hours, 18 minutes, 35 seconds - about 36 minutes longer than planned - Apollo 11 splashed down in the Pacific Ocean.";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "Who was the Lunar Module Pilot on Apollo 11?";
+
+        answerList.add("Edwin E. Aldrin Jr");
+        answerList.add("Neil Armstrong");
+        answerList.add("William A. Anders");
+        answerList.add("Michael Collins");
+
+        explanation = "Edwin E. Aldrin Jr. was the Lunar Module Pilot";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+
+        //new question
+        answerList.clear();
+        question = "Who was the Command Module Pilot on Apollo 11?";
+
+        answerList.add("Michael Collins");
+        answerList.add("Neil Armstrong");
+        answerList.add("William A. Anders");
+        answerList.add("Edwin E. Aldrin Jr.");
+
+        explanation = "Edwin E. Aldrin Jr. was the Lunar Module Pilot";
+        source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
+
+        facts.addFact(new Fact(question,answerList,explanation,source));
+        
+
+
         //end
         return facts;
     }
