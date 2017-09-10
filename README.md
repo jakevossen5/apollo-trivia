@@ -13,4 +13,4 @@ own pride. I hope someone comes along and looks at it. I would love contributers
 
 Contact me with any questions or ideas or anything. 
 
-Why are there a bunch of issues I created? Just to keep track of thme. If somone could help me out on some of them, would be very very appreciated. 
+Why are there a bunch of issues I created? Just to keep track of them. If somone could help me out on some of them, would be very very appreciated. 
