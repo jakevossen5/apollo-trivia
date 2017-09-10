@@ -12,3 +12,5 @@ I debated weather or not to make it open source, but I decided it is better that
 own pride. I hope someone comes along and looks at it. I would love contributers with people who know what they are doing or jsut getting started like me.
 
 Contact me with any questions or ideas or anything. 
+
+Why are there a bunch of issues I created? Just to keep track of thme. If somone could help me out on some of them, would be very very appreciated. 
