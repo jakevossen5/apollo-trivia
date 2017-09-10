@@ -86,6 +86,7 @@ public class MainActivity extends BaseActivity {
         FactGenerator factGenerator = new FactGenerator();
         facts = factGenerator.genFacts();
         facts.randomizeArray();
+        facts.jsonify(facts.getFacts());
         Log.d("TAG", "Generated questions");
     }
 
