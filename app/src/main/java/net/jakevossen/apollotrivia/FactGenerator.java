@@ -948,7 +948,7 @@ public class FactGenerator {
         answerList.add("William A. Anders");
         answerList.add("Edwin E. Aldrin Jr.");
 
-        explanation = "Edwin E. Aldrin Jr. was the Lunar Module Pilot";
+        explanation = "Michael Collins was the Command Module Pilot";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
 
         facts.addFact(new Fact(question,answerList,explanation,source));
