@@ -7,7 +7,7 @@ android {
         applicationId "net.jakevossen.apollotrivia"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 8
+        versionCode 9
         versionName "1.4.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
