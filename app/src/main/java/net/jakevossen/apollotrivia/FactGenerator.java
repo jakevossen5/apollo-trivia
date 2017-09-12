@@ -696,7 +696,7 @@ public class FactGenerator {
         answerList.add("100 million");
         answerList.add("325 million");
 
-        explanation = "Apollo 11 launched from Cape Kennedy on July 16, 1969";
+        explanation = "530 million people watched the moon landing";
         source = "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html";
 
         facts.addFact(new Fact(question,answerList,explanation,source));
