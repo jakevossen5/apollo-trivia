@@ -2,7 +2,12 @@
 
 Learn more about the Apollo missions with this fun android app!
 
-Link: https://play.google.com/store/apps/details?id=net.jakevossen.apollotrivia
+[<img src="https://f-droid.org/badge/get-it-on.png"
+      alt="Get it on F-Droid"
+      height="80">](https://f-droid.org/packages/net.jakevossen.apollotrivia/)
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
+      alt="Get it on Google Play"
+      height="80">](https://play.google.com/store/apps/details?id=net.jakevossen.apollotrivia)
 
 You can find the web version at jakevossen.net/apollotrivia
 
