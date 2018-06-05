@@ -45,7 +45,7 @@
             android:id="@+id/info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This app was created by me to learn more about Android development as well as the Apollo missions, two things that I find really interesting. It is open source and licensed under the GPLV3. If you have questions, or want to contribute trivia, contact me at apollotrivia@jakevossen.net. Check out my other projects and information and jakevossen.net" />
+            android:text="This app was created by me to learn more about Android development as well as the Apollo missions, two things that I find really interesting. It is open source and licensed under the GPLV3. If you have questions, or want to contribute trivia, contact me at jake.vossen@jakevossen.net. Check out my other projects and information and jakevossen.net" />
 
         <Space
             android:layout_width="5dp"
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autoLink="web"
-            android:text="https://github.com/jakevossen5/Apollo-Trivia" />
+            android:text="https://gitlab.com/jakevossen5/Apollo-Trivia" />
 
         <Button
             android:id="@+id/goBackToMain"
