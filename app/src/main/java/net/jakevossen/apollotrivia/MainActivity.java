@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends BaseActivity {
-    private Fact newRandFact;
+    private static Fact newRandFact;
     private static Facts facts;
     private static  Boolean isFirstTime = true;
     private static int correctStreak;
@@ -30,7 +30,12 @@ public class MainActivity extends BaseActivity {
             isFirstTime = false;
         }
         //set the questions
-        genNewQuestion();
+        if (savedInstanceState == null){
+            Fact newRandFact = facts.getRandomFact();
+            this.newRandFact = newRandFact;
+        }
+        genNewQuestion(this.newRandFact);
+
         //generate the stats
         showInGameStats();
 
@@ -63,10 +68,8 @@ public class MainActivity extends BaseActivity {
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public void genNewQuestion() {
-        Fact newRandFact = facts.getRandomFact();
-        this.newRandFact = newRandFact;
-
+    public void genNewQuestion(Fact newRandFact) {
+        //Fact newRandFact = facts.getRandomFact();
         TextView question = (TextView)findViewById(R.id.question);
         RadioButton answer0 = (RadioButton) findViewById(R.id.answer0RadioButton);
         RadioButton answer1 = (RadioButton) findViewById(R.id.answer1RadioButton);

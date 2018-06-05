@@ -11,6 +11,7 @@ import java.util.Random;
  * Created by Jake on 6/16/2017.
  */
 
+
 public class Fact {
     private String question;
     private ArrayList<String> answers = new ArrayList<String>();
