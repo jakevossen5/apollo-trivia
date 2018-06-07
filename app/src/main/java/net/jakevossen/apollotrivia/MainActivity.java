@@ -26,7 +26,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         //first time checker
         if ((isFirstTime == null) || isFirstTime || facts.equals(null)){
-            genAllQuestions();
+            genAllQuestions(false);
             isFirstTime = false;
         }
         //set the questions
@@ -69,7 +69,6 @@ public class MainActivity extends BaseActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void genNewQuestion(Fact newRandFact) {
-        //Fact newRandFact = facts.getRandomFact();
         TextView question = (TextView)findViewById(R.id.question);
         RadioButton answer0 = (RadioButton) findViewById(R.id.answer0RadioButton);
         RadioButton answer1 = (RadioButton) findViewById(R.id.answer1RadioButton);
@@ -85,11 +84,13 @@ public class MainActivity extends BaseActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void genAllQuestions() {
+    private void genAllQuestions(Boolean doJsonify) {
         FactGenerator factGenerator = new FactGenerator();
         facts = factGenerator.genFacts();
+        if (doJsonify){
+            facts.jsonify(facts.getFacts());
+        }
         facts.randomizeArray();
-        facts.jsonify(facts.getFacts());
         Log.d("TAG", "Generated questions");
     }
 
