@@ -27,8 +27,6 @@ public class BaseActivity extends AppCompatActivity {
             case R.id.version:
                 showVersion();
                 return true;
-            case R.id.website:
-                openWebsite();
 
             default:
                 return super.onOptionsItemSelected(item);
@@ -50,6 +48,7 @@ public class BaseActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    // Old method when the website was in the bar
     private void openWebsite() {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://jakevossen.net/apollotrivia"));
         startActivity(browserIntent);
