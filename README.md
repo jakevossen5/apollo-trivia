@@ -1,14 +1,18 @@
 # Apollo-Trivia
 
-Learn more about the Apollo missions with this fun android app!
+## Maintenance mode
 
-[<img src="https://f-droid.org/badge/get-it-on.png"
-      alt="Get it on F-Droid"
-      height="80">](https://f-droid.org/packages/net.jakevossen.apollotrivia/)
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
-      alt="Get it on Google Play"
-      height="80">](https://play.google.com/store/apps/details?id=net.jakevossen.apollotrivia)
+Apollo Trivia is now in maintenance mode. This means that I am no
+longer providing support / updates for this. If you are interested in
+supporting it, email me.
 
-You can find the web version at jakevossen.net/apollotrivia
+This app was developed just to help me learn more about Android
+programming and I really wanted to know more about the Apollo
+missions. So I knocked out two birds with one stone and did
+this.
 
-This app was developed just to help me learn more about Android programming and I really wanted to know more about the Apollo missions. So I knocked out two birds with one stone and did this. Please email me if you want to add more facts, or help with any of the development.
+It is no longer available from the Play Store, but you should be able
+to download it from the
+[releases
+tab](https://github.com/jakevossen5/apollo-trivia/releases) or build
+it from source.
