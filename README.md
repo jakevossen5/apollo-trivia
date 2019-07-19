@@ -4,7 +4,7 @@
 
 Apollo Trivia is now in maintenance mode. This means that I am no
 longer providing support / updates for this. If you are interested in
-supporting it, email me.
+supporting it, email me. Read more [on my blog](https://jake.vossen.dev/blogs/apollo-trivia-maintenance-mode.html).
 
 This app was developed just to help me learn more about Android
 programming and I really wanted to know more about the Apollo
